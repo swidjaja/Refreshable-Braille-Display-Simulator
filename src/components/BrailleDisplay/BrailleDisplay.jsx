@@ -32,12 +32,22 @@ class BrailleDisplay extends Component {
     return pages;
   }
 
+  componentDidUpdate(prevProps) {
+    if (prevProps.numOfCells !== this.props.numOfCells) {
+      this.pages = this._generatePages(this.props.sentence, this.props.numOfCells);
+      this.setState({
+        page: 0,
+      })
+    }
+  }
+
   render() {
+    console.log('RENDERING');
     const { page } = this.state;
     console.log(page, this.pages[page]);
 
     return (
-      <div className="braille-display">
+      <div className={`braille-display braille-display--${this.props.numOfCells}`}>
         <button
           className="braille-display__nav braille-display__nav--prev-page"
           disabled={page === 0}

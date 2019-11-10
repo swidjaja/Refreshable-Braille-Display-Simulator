@@ -1,3 +1,27 @@
 .braille-display-simulator {
   margin-left: 20px;
+
+  .preferences {
+    h2 {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__save-btn {
+      border-radius: 2px;
+      cursor: pointer;
+      font-size: 16px;
+      padding: 10px;
+    }
+  }
+
+  .preference {
+    margin: 10px 0;
+
+    &__num-of-cells h3 {
+      display: inline;
+      margin: 0 20px 0 0;
+      padding: 0;
+    }
+  }
 }

@@ -3,6 +3,29 @@
   border: 1px solid black;
   margin: 20px 0;
 
+  &--20 {
+    .braille-dot {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &--40 {
+    .braille-cell {
+      margin: 5px;
+    }
+
+    .braille-dot {
+      width: 5px;
+      height: 5px;
+    }
+
+    .braille-display__nav {
+      font-size: 20px;
+      width: 40px;
+    }
+  }
+
   &__nav {
     border: 0;
     cursor: pointer;
