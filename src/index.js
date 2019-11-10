@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import BrailleDisplaySimulator from './components/BrailleDisplaySimulator';
+import './index.css';
 
 ReactDOM.render(<BrailleDisplaySimulator />, document.getElementById('root'));

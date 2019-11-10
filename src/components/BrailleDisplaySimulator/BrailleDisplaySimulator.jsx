@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import './BrailleDisplaySimulator.scss';
 import BrailleDisplay from '../BrailleDisplay';
+import './BrailleDisplaySimulator.scss';
 
 const BrailleDisplaySimulator = () => {
   const [numOfActiveCells, setNumOfActiveCells] = useState(14);

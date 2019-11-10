@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './BrailleCellPage.scss';
 import BrailleCell from '../BrailleCell';
 import brailleCharacters from '../../lib/uncontracted-braille-chars';
+import './BrailleCellPage.scss';
 
 const BrailleCellPage = (props) => {
   const { words } = props;
