@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ac1a2d9107cb261e796f12fa2aabcd5",
+    "revision": "2f42b31e7364007e2e7d9265927ca44b",
     "url": "/Refreshable-Braille-Display-Simulator/index.html"
   },
   {
