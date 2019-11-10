@@ -1,0 +1,39 @@
+.braille-display {
+  display: inline-flex;
+  border: 1px solid black;
+  margin: 20px 0;
+
+  &__nav {
+    border: 0;
+    font-size: 24px;
+    width: 30px;
+
+    &--prev-page {
+      &::before {
+        content: '<';
+      }
+    }
+
+    &--next-page {
+      &::before {
+        content: '>';
+      }
+    }
+
+    &:focus, &:hover {
+      outline-offset: -2px;
+    }
+  }
+}
+
+.braille-display--prev-page {
+  &::before {
+    content: '<';
+  }
+}
+
+.braille-display--next-page {
+  &::after {
+    content: '>';
+  }
+}
