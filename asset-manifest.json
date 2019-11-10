@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Refreshable-Braille-Display-Simulator/static/css/main.1e040f76.chunk.css",
+    "main.css": "/Refreshable-Braille-Display-Simulator/static/css/main.3dd9d5ea.chunk.css",
     "main.js": "/Refreshable-Braille-Display-Simulator/static/js/main.01f173cf.chunk.js",
     "main.js.map": "/Refreshable-Braille-Display-Simulator/static/js/main.01f173cf.chunk.js.map",
     "runtime-main.js": "/Refreshable-Braille-Display-Simulator/static/js/runtime-main.a41b5eb3.js",
@@ -8,14 +8,14 @@
     "static/js/2.05d8c626.chunk.js": "/Refreshable-Braille-Display-Simulator/static/js/2.05d8c626.chunk.js",
     "static/js/2.05d8c626.chunk.js.map": "/Refreshable-Braille-Display-Simulator/static/js/2.05d8c626.chunk.js.map",
     "index.html": "/Refreshable-Braille-Display-Simulator/index.html",
-    "precache-manifest.a336ad86cf7c63f4b0aa3bddb13c12bb.js": "/Refreshable-Braille-Display-Simulator/precache-manifest.a336ad86cf7c63f4b0aa3bddb13c12bb.js",
+    "precache-manifest.3f8cff788958fd146acc9f811365104e.js": "/Refreshable-Braille-Display-Simulator/precache-manifest.3f8cff788958fd146acc9f811365104e.js",
     "service-worker.js": "/Refreshable-Braille-Display-Simulator/service-worker.js",
-    "static/css/main.1e040f76.chunk.css.map": "/Refreshable-Braille-Display-Simulator/static/css/main.1e040f76.chunk.css.map"
+    "static/css/main.3dd9d5ea.chunk.css.map": "/Refreshable-Braille-Display-Simulator/static/css/main.3dd9d5ea.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.a41b5eb3.js",
     "static/js/2.05d8c626.chunk.js",
-    "static/css/main.1e040f76.chunk.css",
+    "static/css/main.3dd9d5ea.chunk.css",
     "static/js/main.01f173cf.chunk.js"
   ]
 }
