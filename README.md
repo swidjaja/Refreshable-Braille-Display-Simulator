@@ -1,6 +1,10 @@
 ## Refreshable Braille Display Simulator
 
-This app simulates the basic experience of using Braille display device.
+This is a refreshable Braille display simulator for people to understand what it's like to read line by line via a Braille display.  As the cost to produce each Braille cell is very high, portability and affordability would mean a compromise in number of cells available on the device. This will impact readability.
+
+We hope that this simulator could give people a sense of the impact and an insight and appreciation for Braille learners and non-Braille users of the cognitive load required to access information via a Braille display.
+
+Special thanks go to my friend, [starry007](fb.me/starry007), for writing this nice introduction note and for inspiring me to work on this simulator.
 
 [Demo](https://swidjaja.github.io/Refreshable-Braille-Display-Simulator)
 
