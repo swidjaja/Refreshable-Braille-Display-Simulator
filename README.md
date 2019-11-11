@@ -4,7 +4,7 @@ This is a refreshable Braille display simulator for people to understand what it
 
 We hope that this simulator could give people a sense of the impact and an insight and appreciation for Braille learners and non-Braille users of the cognitive load required to access information via a Braille display.
 
-Special thanks go to my friend, [starry007](fb.me/starry007), for writing this nice introduction note and for inspiring me to work on this simulator.
+Special thanks go to my friend, [starry007](https://fb.me/starry007), for writing this nice introduction note and for inspiring me to work on this simulator.
 
 [Demo](https://swidjaja.github.io/Refreshable-Braille-Display-Simulator)
 
