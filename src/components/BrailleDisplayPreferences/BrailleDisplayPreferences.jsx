@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 const BrailleDisplayCellPreference = (props) => {
@@ -16,8 +16,11 @@ const BrailleDisplayCellPreference = (props) => {
 
   const onShowCharacterChecked = () => {
     setShowCharacterChecked(!showCharacterChecked);
-    setShowCharacter(!showCharacterChecked);
   };
+
+  useEffect(() => {
+    setShowCharacter(showCharacterChecked);
+  }, [setShowCharacter, showCharacterChecked]);
 
   return (
     <section className="braille-display-preferences">
@@ -40,7 +43,7 @@ const BrailleDisplayCellPreference = (props) => {
         <label htmlFor="showCharsCheckbox">Show characters</label>
       </div>
     </section>
-);
+  );
 };
 
 BrailleDisplayCellPreference.propTypes = {
