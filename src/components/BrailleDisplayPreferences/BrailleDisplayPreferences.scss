@@ -1,0 +1,24 @@
+.braille-display-preferences {
+  h2 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .preference {
+    margin: 10px 0;
+
+    &__num-of-cells h3 {
+      display: inline;
+      margin: 0 20px 0 0;
+      padding: 0;
+    }
+
+    &__show-characters {
+      display: flex;
+
+      label {
+        margin-left: 5px;
+      }
+    }
+  }
+}

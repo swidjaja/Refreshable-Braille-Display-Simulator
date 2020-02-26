@@ -1,26 +1,17 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import BrailleCellPage from '../BrailleCellPage';
-import './BrailleDisplay.scss';
 
-class BrailleDisplay extends Component {
-  constructor(props) {
-    super(props);
+const BrailleDisplay = (props) => {
+  const {
+    numOfCells,
+    sentence,
+    showCharacter,
+  } = props;
 
-    const { sentence, numOfCells } = props;
+  const [page, setPage] = useState(0);
 
-    this.pages = this._generatePages(sentence, numOfCells);
-
-    this.state = {
-      page: 0,
-    }
-  }
-
-  _setPage(page) {
-    this.setState({ page });
-  }
-
-  _generatePages(sentence, numOfCells) {
+  const generatePages = (sentence, numOfCells) => {
     const pages = [];
     let start = 0;
 
@@ -30,47 +21,38 @@ class BrailleDisplay extends Component {
     } while (start < sentence.length);
 
     return pages;
-  }
+  };
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.numOfCells !== this.props.numOfCells) {
-      this.pages = this._generatePages(this.props.sentence, this.props.numOfCells);
-      this.setState({
-        page: 0,
-      })
-    }
-  }
+  const pages = generatePages(sentence, numOfCells);
 
-  render() {
-    console.log('RENDERING');
-    const { page } = this.state;
-    console.log(page, this.pages[page]);
-
-    return (
-      <div className={`braille-display braille-display--${this.props.numOfCells}`}>
-        <button
-          className="braille-display__nav braille-display__nav--prev-page"
-          disabled={page === 0}
-          aria-label="Flip to previous page"
-          onClick={() => this._setPage(page - 1)}
-        >
-        </button>
-        <BrailleCellPage words={this.pages[page]} />
-        <button
-          className="braille-display__nav braille-display__nav--next-page"
-          disabled={page === this.pages.length - 1}
-          aria-label="Flip to next page"
-          onClick={() => this._setPage(page + 1)}
-        >
-        </button>
-      </div>
-    );
-  }
-}
+  return (
+    <div className={`braille-display braille-display--${numOfCells}`}>
+      <button
+        className="braille-display__nav braille-display__nav--prev-page"
+        disabled={page === 0}
+        aria-label="Flip to previous page"
+        onClick={() => setPage(page - 1)}
+      >
+      </button>
+      <BrailleCellPage
+        words={pages[page]} 
+        showCharacter={showCharacter}
+      />
+      <button
+        className="braille-display__nav braille-display__nav--next-page"
+        disabled={page === pages.length - 1}
+        aria-label="Flip to next page"
+        onClick={() => setPage(page + 1)}
+      >
+      </button>
+    </div>
+  );
+};
 
 BrailleDisplay.propTypes = {
   sentence: PropTypes.string.isRequired,
   numOfCells: PropTypes.number,
+  showCharacter: PropTypes.bool.isRequired,
 };
 
 BrailleDisplay.defaultProps = {
