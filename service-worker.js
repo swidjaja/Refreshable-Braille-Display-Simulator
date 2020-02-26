@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Refreshable-Braille-Display-Simulator/precache-manifest.e80abd69825a5aafb60ad81c423ccad5.js"
+  "/Refreshable-Braille-Display-Simulator/precache-manifest.93c975ad2167c6b30d2d0a7bdf44d411.js"
 );
 
 self.addEventListener('message', (event) => {

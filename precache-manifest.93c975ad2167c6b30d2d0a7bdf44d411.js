@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc6ed55a2689aa69c39b41949c329ba5",
+    "revision": "352849429f252789b0f36bcd314fbe67",
     "url": "/Refreshable-Braille-Display-Simulator/index.html"
   },
   {
-    "revision": "ff6744edec13b91862b7",
+    "revision": "5ae533a7c2400ee19032",
     "url": "/Refreshable-Braille-Display-Simulator/static/css/main.21b47b73.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Refreshable-Braille-Display-Simulator/static/js/2.5d8a9c44.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ff6744edec13b91862b7",
-    "url": "/Refreshable-Braille-Display-Simulator/static/js/main.53748285.chunk.js"
+    "revision": "5ae533a7c2400ee19032",
+    "url": "/Refreshable-Braille-Display-Simulator/static/js/main.0c6b3aad.chunk.js"
   },
   {
     "revision": "37650fbda1c6ca09f840",
