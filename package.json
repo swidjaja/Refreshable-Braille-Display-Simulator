@@ -1,6 +1,6 @@
 {
   "name": "braille-display-simulator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "private": true,
   "homepage": "https://swidjaja.github.io/Refreshable-Braille-Display-Simulator",
   "dependencies": {

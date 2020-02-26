@@ -19,6 +19,8 @@ Special thanks go to my friend, [starry007](https://fb.me/starry007), for writin
     
     - [Focus 40](https://www.freedomscientific.com/products/blindness/focus40brailledisplay/) - 40 cells
 
+**02/25/19**
+- Added capability to show the actual text 
+
 ### Incoming Updates
-- ~~Ability to switch number of Braille cells~~ (Added on 11/20/19)
 - Auto-refresh one cell display simulator
