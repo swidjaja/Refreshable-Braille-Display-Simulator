@@ -9,6 +9,9 @@ Special thanks go to my friend, [starry007](https://fb.me/starry007), for writin
 [Demo](https://swidjaja.github.io/Refreshable-Braille-Display-Simulator)
 
 ### Updates
+**04/22/20**
+- Added quote selector to allow user to select desired quote to read
+
 **11/20/19**
 - Added capability to switch number of cells to display per page.
 

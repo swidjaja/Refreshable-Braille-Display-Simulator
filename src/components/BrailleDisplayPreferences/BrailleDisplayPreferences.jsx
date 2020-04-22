@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import QuotesSelector from '../QuotesSelector';
 
 const BrailleDisplayCellPreference = (props) => {
   const {
     setNumOfActiveCells,
     setShowCharacter,
+    setSelectedText,
   } = props;
 
   const [showCharacterChecked, setShowCharacterChecked] = useState(false);
@@ -33,6 +35,9 @@ const BrailleDisplayCellPreference = (props) => {
           <option value="40">40 cells</option>
         </select>
       </section>
+      <QuotesSelector
+        setSelectedText={setSelectedText}
+      />
       <div className="preference preference__show-characters">
         <input
           type="checkbox"
