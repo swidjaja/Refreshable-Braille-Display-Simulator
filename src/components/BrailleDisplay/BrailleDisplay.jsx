@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+/* eslint-disable-next-line import/no-extraneous-dependencies */
 import PropTypes from 'prop-types';
 import BrailleCellPage from '../BrailleCellPage';
 
@@ -11,14 +12,14 @@ const BrailleDisplay = (props) => {
 
   const [page, setPage] = useState(0);
 
-  const generatePages = (sentence, numOfCells) => {
+  const generatePages = (text, cellsCount) => {
     const pages = [];
     let start = 0;
 
     do {
-      pages.push(sentence.substring(start, start + numOfCells));
+      pages.push(text.substring(start, start + cellsCount));
       start += numOfCells;
-    } while (start < sentence.length);
+    } while (start < text.length);
 
     return pages;
   };
@@ -32,8 +33,8 @@ const BrailleDisplay = (props) => {
         disabled={page === 0}
         aria-label="Flip to previous page"
         onClick={() => setPage(page - 1)}
-      >
-      </button>
+        type="button"
+      />
       <BrailleCellPage
         words={pages[page]} 
         showCharacter={showCharacter}
@@ -43,8 +44,8 @@ const BrailleDisplay = (props) => {
         disabled={page === pages.length - 1}
         aria-label="Flip to next page"
         onClick={() => setPage(page + 1)}
-      >
-      </button>
+        type="button"
+      />
     </div>
   );
 };

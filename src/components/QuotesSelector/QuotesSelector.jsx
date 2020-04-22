@@ -1,5 +1,7 @@
+/* eslint-disable jsx-a11y/no-onchange */
 import React, { useState, useEffect } from 'react';
-// import PropTypes from 'prop-types';
+/* eslint-disable-next-line import/no-extraneous-dependencies */
+import PropTypes from 'prop-types';
 import getQuotes from '../../lib/quotes';
 
 const QuotesSelector = (props) => {
@@ -12,7 +14,11 @@ const QuotesSelector = (props) => {
   const [text, setText] = useState(allQuotes[0].quote);
 
   const onAuthorChosen = (evt) => {
-    const value = evt.target.value;
+    const {
+      target: {
+        value
+      }
+    } = evt;
     setText(value);
   };
 
@@ -30,6 +36,10 @@ const QuotesSelector = (props) => {
       </select>
     </section>
   );
-}
+};
+
+QuotesSelector.propTypes = {
+  setSelectedText: PropTypes.func.isRequired,
+};
 
 export default QuotesSelector;

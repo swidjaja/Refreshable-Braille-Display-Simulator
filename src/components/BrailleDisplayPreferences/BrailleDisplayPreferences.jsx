@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/no-onchange */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState, useEffect } from 'react';
+/* eslint-disable-next-line import/no-extraneous-dependencies */
 import PropTypes from 'prop-types';
 import QuotesSelector from '../QuotesSelector';
 
@@ -12,8 +15,8 @@ const BrailleDisplayCellPreference = (props) => {
   const [showCharacterChecked, setShowCharacterChecked] = useState(false);
 
   const updateNumOfCells = (evt) => {
-    const value = evt.target.value;
-    setNumOfActiveCells(value);
+    const { target: { value } } = evt;
+    setNumOfActiveCells(parseInt(value, 10) || 14);
   };
 
   const onShowCharacterChecked = () => {
@@ -52,7 +55,9 @@ const BrailleDisplayCellPreference = (props) => {
 };
 
 BrailleDisplayCellPreference.propTypes = {
-  setNumOfActiveCells: PropTypes.func,
+  setNumOfActiveCells: PropTypes.func.isRequired,
+  setShowCharacter: PropTypes.func.isRequired,
+  setSelectedText: PropTypes.func.isRequired,
 };
 
 export default BrailleDisplayCellPreference;
