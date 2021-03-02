@@ -1,6 +1,6 @@
 import React from 'react';
-import BrailleCell from '../BrailleCell';
 import { mount } from 'enzyme';
+import BrailleCell from '../BrailleCell';
 
 describe('Braille Cell Component', () => {
   const props = {

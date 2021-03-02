@@ -1,6 +1,6 @@
 import React from 'react';
-import BrailleCellPage from '../BrailleCellPage';
 import { mount } from 'enzyme';
+import BrailleCellPage from '../BrailleCellPage';
 
 describe('Braille Cell Page Component', () => {
   const props = {
