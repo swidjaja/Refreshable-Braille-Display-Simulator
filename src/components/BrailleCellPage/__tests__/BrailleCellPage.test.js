@@ -4,7 +4,7 @@ import { mount } from 'enzyme';
 
 describe('Braille Cell Page Component', () => {
   const props = {
-    showCharacter: false,
+    showCharacter: true,
     words: 'hello',
   };
 
