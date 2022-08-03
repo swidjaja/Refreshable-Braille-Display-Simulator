@@ -46,6 +46,16 @@
     "prettier": "^2.0.5",
     "sass": "^1.54.1"
   },
+  "resolutions": {
+    "ansi-html": "^0.0.8",
+    "browserslist": "^4.16.5",
+    "ejs": "^3.1.7",
+    "glob-parent": "^5.1.2",
+    "immer": "^9.0.6",
+    "node-forge": "^1.3.0",
+    "nth-check": "^2.0.1",
+    "shell-quote": "^1.7.3"
+  },
   "jest": {
     "setupFilesAfterEnv": [
       "<rootDir>/conf/jest.config.js"
