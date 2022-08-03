@@ -32,8 +32,12 @@ const BrailleDisplayCellPreference = (props) => {
       <h2>Update your preferences:</h2>
       <section className="preference preference__num-of-cells">
         <h3>Number of cells: </h3>
-        <select aria-label="Select number of cells" onChange={updateNumOfCells}>
-          <option value="14" selected>14 cells</option>
+        <select
+          aria-label="Select number of cells"
+          defaultValue={14}
+          onChange={updateNumOfCells}
+        >
+          <option value="14">14 cells</option>
           <option value="20">20 cells</option>
           <option value="40">40 cells</option>
         </select>

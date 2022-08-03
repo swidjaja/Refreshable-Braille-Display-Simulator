@@ -29,9 +29,13 @@ const QuotesSelector = (props) => {
   return (
     <section className="preference preference__quotes">
       <h3>Quotes By:</h3>
-      <select aria-label="Select author of quote" onChange={onAuthorChosen}>
-        {allQuotes.map(({ id, author, quote}, idx) => (
-          <option key={id} value={quote} selected={idx === 0}>{author}</option>
+      <select
+        aria-label="Select author of quote"
+        defaultValue={allQuotes[0].quote}
+        onChange={onAuthorChosen}
+      >
+        {allQuotes.map(({ id, author, quote}) => (
+          <option key={id} value={quote}>{author}</option>
         ))}
       </select>
     </section>
