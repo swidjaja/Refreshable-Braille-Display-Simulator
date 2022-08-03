@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/Refreshable-Braille-Display-Simulator/static/css/main.c4a464cb.chunk.css",
-    "main.js": "/Refreshable-Braille-Display-Simulator/static/js/main.3eb922c8.chunk.js",
-    "main.js.map": "/Refreshable-Braille-Display-Simulator/static/js/main.3eb922c8.chunk.js.map",
-    "runtime-main.js": "/Refreshable-Braille-Display-Simulator/static/js/runtime-main.0ef7ade4.js",
-    "runtime-main.js.map": "/Refreshable-Braille-Display-Simulator/static/js/runtime-main.0ef7ade4.js.map",
-    "static/js/2.064671ca.chunk.js": "/Refreshable-Braille-Display-Simulator/static/js/2.064671ca.chunk.js",
-    "static/js/2.064671ca.chunk.js.map": "/Refreshable-Braille-Display-Simulator/static/js/2.064671ca.chunk.js.map",
+    "main.css": "/Refreshable-Braille-Display-Simulator/static/css/main.97d8c41e.chunk.css",
+    "main.js": "/Refreshable-Braille-Display-Simulator/static/js/main.8b68dc5b.chunk.js",
+    "main.js.map": "/Refreshable-Braille-Display-Simulator/static/js/main.8b68dc5b.chunk.js.map",
+    "runtime-main.js": "/Refreshable-Braille-Display-Simulator/static/js/runtime-main.fd794f6c.js",
+    "runtime-main.js.map": "/Refreshable-Braille-Display-Simulator/static/js/runtime-main.fd794f6c.js.map",
+    "static/js/2.9c96db39.chunk.js": "/Refreshable-Braille-Display-Simulator/static/js/2.9c96db39.chunk.js",
+    "static/js/2.9c96db39.chunk.js.map": "/Refreshable-Braille-Display-Simulator/static/js/2.9c96db39.chunk.js.map",
     "index.html": "/Refreshable-Braille-Display-Simulator/index.html",
-    "precache-manifest.b1394363e05f8a98e10dcb3db00041d7.js": "/Refreshable-Braille-Display-Simulator/precache-manifest.b1394363e05f8a98e10dcb3db00041d7.js",
-    "service-worker.js": "/Refreshable-Braille-Display-Simulator/service-worker.js",
-    "static/css/main.c4a464cb.chunk.css.map": "/Refreshable-Braille-Display-Simulator/static/css/main.c4a464cb.chunk.css.map",
-    "static/js/2.064671ca.chunk.js.LICENSE.txt": "/Refreshable-Braille-Display-Simulator/static/js/2.064671ca.chunk.js.LICENSE.txt"
+    "static/css/main.97d8c41e.chunk.css.map": "/Refreshable-Braille-Display-Simulator/static/css/main.97d8c41e.chunk.css.map",
+    "static/js/2.9c96db39.chunk.js.LICENSE.txt": "/Refreshable-Braille-Display-Simulator/static/js/2.9c96db39.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0ef7ade4.js",
-    "static/js/2.064671ca.chunk.js",
-    "static/css/main.c4a464cb.chunk.css",
-    "static/js/main.3eb922c8.chunk.js"
+    "static/js/runtime-main.fd794f6c.js",
+    "static/js/2.9c96db39.chunk.js",
+    "static/css/main.97d8c41e.chunk.css",
+    "static/js/main.8b68dc5b.chunk.js"
   ]
 }
