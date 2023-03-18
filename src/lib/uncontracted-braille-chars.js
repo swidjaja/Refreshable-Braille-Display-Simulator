@@ -42,4 +42,6 @@ const uncontractedBrailleChars = {
   "'": [false, false, false, false, true, false, false, false],
 }
 
+export const emptyCell = [false, false, false, false, false, false, false, false];
+
 export default uncontractedBrailleChars;

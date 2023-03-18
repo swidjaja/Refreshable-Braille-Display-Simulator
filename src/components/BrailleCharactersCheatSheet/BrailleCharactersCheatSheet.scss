@@ -1,0 +1,5 @@
+.braille-characters-cheatsheet {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  gap: 2px;
+}

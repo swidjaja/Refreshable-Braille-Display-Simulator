@@ -9,10 +9,14 @@ const BrailleDisplayCellPreference = (props) => {
   const {
     setNumOfActiveCells,
     setShowCharacter,
+    showCharacter,
     setSelectedText,
+    showBrailleCheatsheet,
+    setShowBrailleCheatsheet,
   } = props;
 
-  const [showCharacterChecked, setShowCharacterChecked] = useState(false);
+  const [showCharacterChecked, setShowCharacterChecked] = useState(showCharacter);
+  const [showBrailleCheatSheetChecked, setShowBrailleCheatSheetChecked] = useState(showBrailleCheatsheet);
 
   const updateNumOfCells = (evt) => {
     const { target: { value } } = evt;
@@ -23,15 +27,23 @@ const BrailleDisplayCellPreference = (props) => {
     setShowCharacterChecked(!showCharacterChecked);
   };
 
+  const onShowCharacterCheatSheetChecked = () => {
+    setShowBrailleCheatSheetChecked(!showBrailleCheatSheetChecked);
+  }
+
   useEffect(() => {
     setShowCharacter(showCharacterChecked);
   }, [setShowCharacter, showCharacterChecked]);
+
+  useEffect(() => {
+    setShowBrailleCheatsheet(showBrailleCheatSheetChecked);
+  }, [setShowBrailleCheatsheet, showBrailleCheatSheetChecked]);
 
   return (
     <section className="braille-display-preferences">
       <h2>Update your preferences:</h2>
       <section className="preference preference__num-of-cells">
-        <h3>Number of cells: </h3>
+        <span>Number of cells: </span>
         <select
           aria-label="Select number of cells"
           defaultValue={14}
@@ -54,6 +66,15 @@ const BrailleDisplayCellPreference = (props) => {
         />
         <label htmlFor="showCharsCheckbox">Show characters</label>
       </div>
+      <div className="preference preference__show-characters">
+        <input
+          type="checkbox"
+          id="showCheatSheetCheckbox"
+          checked={showBrailleCheatSheetChecked}
+          onChange={onShowCharacterCheatSheetChecked}
+        />
+        <label htmlFor="showCheatSheetCheckbox">Show Braille CheatSheet</label>
+      </div>
     </section>
   );
 };
@@ -61,7 +82,10 @@ const BrailleDisplayCellPreference = (props) => {
 BrailleDisplayCellPreference.propTypes = {
   setNumOfActiveCells: PropTypes.func.isRequired,
   setShowCharacter: PropTypes.func.isRequired,
+  showCharacter: PropTypes.bool.isRequired,
   setSelectedText: PropTypes.func.isRequired,
+  showBrailleCheatsheet: PropTypes.bool.isRequired,
+  setShowBrailleCheatsheet: PropTypes.func.isRequired,
 };
 
 export default BrailleDisplayCellPreference;

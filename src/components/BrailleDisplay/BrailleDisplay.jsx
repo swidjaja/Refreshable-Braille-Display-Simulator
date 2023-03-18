@@ -36,6 +36,7 @@ const BrailleDisplay = (props) => {
         type="button"
       />
       <BrailleCellPage
+        numOfCells={numOfCells}
         words={pages[page]} 
         showCharacter={showCharacter}
       />

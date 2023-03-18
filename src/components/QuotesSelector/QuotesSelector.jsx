@@ -28,7 +28,7 @@ const QuotesSelector = (props) => {
 
   return (
     <section className="preference preference__quotes">
-      <h3>Quotes By:</h3>
+      <span>Quotes By: </span>
       <select
         aria-label="Select author of quote"
         defaultValue={allQuotes[0].quote}
