@@ -25,5 +25,8 @@ Special thanks go to my friend, [starry007](https://fb.me/starry007), for writin
 **02/25/19**
 - Added capability to show the actual text 
 
+**03/17/23**
+- Added capability to show Braille CheatSheet
+
 ### Incoming Updates
 - Auto-refresh one cell display simulator
