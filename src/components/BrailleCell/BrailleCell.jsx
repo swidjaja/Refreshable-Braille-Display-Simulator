@@ -14,18 +14,18 @@ const BrailleCell = (props) => {
     <div className="braille-cell">
       <div className="braille-row">
         <span className={`braille-dot braille-dot--${size} ${brailleCharacter[0] ? 'braille-dot--active' : ''}`} />
-        <span className={`braille-dot braille-dot--${size} ${brailleCharacter[1] ? 'braille-dot--active' : ''}`} />
-      </div>
-      <div className="braille-row">
-        <span className={`braille-dot braille-dot--${size} ${brailleCharacter[2] ? 'braille-dot--active' : ''}`} />
-        <span className={`braille-dot braille-dot--${size} ${brailleCharacter[3] ? 'braille-dot--active' : ''}`} />
-      </div>
-      <div className="braille-row">
         <span className={`braille-dot braille-dot--${size} ${brailleCharacter[4] ? 'braille-dot--active' : ''}`} />
+      </div>
+      <div className="braille-row">
+        <span className={`braille-dot braille-dot--${size} ${brailleCharacter[1] ? 'braille-dot--active' : ''}`} />
         <span className={`braille-dot braille-dot--${size} ${brailleCharacter[5] ? 'braille-dot--active' : ''}`} />
       </div>
       <div className="braille-row">
+        <span className={`braille-dot braille-dot--${size} ${brailleCharacter[2] ? 'braille-dot--active' : ''}`} />
         <span className={`braille-dot braille-dot--${size} ${brailleCharacter[6] ? 'braille-dot--active' : ''}`} />
+      </div>
+      <div className="braille-row">
+        <span className={`braille-dot braille-dot--${size} ${brailleCharacter[3] ? 'braille-dot--active' : ''}`} />
         <span className={`braille-dot braille-dot--${size} ${brailleCharacter[7] ? 'braille-dot--active' : ''}`} />
       </div>
       {showCharacter && (<div className="character-row">{character}</div>)}

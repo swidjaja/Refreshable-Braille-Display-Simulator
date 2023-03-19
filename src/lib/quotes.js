@@ -4,19 +4,19 @@
 const quotes = [
   {
     author: 'Mahatma Gandhi',
-    quote: 'Be the change that you wish to see in the world.',
+    quote: 'be the change that you wish to see in the world.',
   },
   {
     author: 'J.K. Rowling',
-    quote: "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
+    quote: "if you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.",
   },
   {
     author: 'Mark Twain',
-    quote: "If you tell the truth, you don't have to remember anything.",
+    quote: "if you tell the truth, you don't have to remember anything.",
   },
   {
     author: 'Eleanor Roosevelt',
-    quote: "No one can make you feel inferior without your consent.",
+    quote: "no one can make you feel inferior without your consent.",
   },
   {
     author: 'Roy T. Bennett',

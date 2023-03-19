@@ -8,6 +8,11 @@ Special thanks go to my friend, [starry007](https://fb.me/starry007), for writin
 
 [Demo](https://swidjaja.github.io/Refreshable-Braille-Display-Simulator)
 
+### Current Limitations
+- No support yet for number indicator (dots 3-4-5-6)
+- No support yet for capital letter (dot 6)
+- Limited punctuation support
+
 ### Updates
 **04/22/20**
 - Added quote selector to allow user to select desired quote to read
